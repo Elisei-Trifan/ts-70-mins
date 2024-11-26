@@ -22,3 +22,14 @@ function sayName(name: string): void {
 }
 
 sayName('Elisei')
+
+// Type
+type ID = number
+
+type User = {
+  id: number
+  name: string
+}
+
+type Status = 'success' | 'loading' | number
+type UserStatus = User & Status
